@@ -72,7 +72,7 @@ nav{
 }
 .hero-dr{
   font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;
-  font-size:clamp(1.6rem,3vw,2.4rem);color:rgba(255,255,255,.38);
+  font-size:clamp(1.6rem,3vw,2.4rem);color:rgba(255,255,255,.6);
   display:block;margin-bottom:.2rem;
 }
 
@@ -81,28 +81,29 @@ nav{
   font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
   color:var(--rose);margin-bottom:.5rem;
 }
-.affil-primary{font-size:1.05rem;font-weight:500;color:var(--white);line-height:1.5;margin-bottom:1.6rem;}
+.affil-primary{font-size:1.08rem;font-weight:500;color:var(--white);line-height:1.5;margin-bottom:1.6rem;}
 .affil-honorary-head{
   font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
-  color:rgba(255,255,255,.35);margin-bottom:.7rem;
-  padding-top:1.4rem;border-top:1px solid rgba(255,255,255,.07);
+  color:#7dd3c8;margin-bottom:.7rem;
+  padding-top:1.4rem;border-top:1px solid rgba(255,255,255,.1);
 }
-.affil-honorary-list{list-style:none;display:flex;flex-direction:column;gap:.45rem;}
+.affil-honorary-list{list-style:none;display:flex;flex-direction:column;gap:.5rem;}
 .affil-honorary-list li{
-  font-size:.88rem;color:rgba(255,255,255,.5);line-height:1.55;
-  padding-left:1rem;position:relative;
+  font-size:.9rem;color:rgba(255,255,255,.82);line-height:1.6;
+  padding-left:1.1rem;position:relative;
 }
 .affil-honorary-list li::before{
-  content:'';position:absolute;left:0;top:.58em;
-  width:5px;height:5px;border-radius:50%;background:var(--rose);flex-shrink:0;
+  content:'';position:absolute;left:0;top:.6em;
+  width:5px;height:5px;border-radius:50%;background:#7dd3c8;flex-shrink:0;
 }
 
 .hero-blurb{
-  margin-top:2.2rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.07);
-  font-size:.93rem;color:rgba(255,255,255,.45);line-height:1.85;max-width:680px;
+  margin-top:2.2rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.1);
+  font-size:.95rem;color:rgba(255,255,255,.78);line-height:1.9;max-width:680px;
 }
 .hero-nqm{
-  margin-top:.6rem;font-size:.84rem;font-style:italic;color:rgba(255,255,255,.28);
+  margin-top:.65rem;font-size:.86rem;font-style:italic;
+  color:#f9c46b;
 }
 .hero-cta{display:flex;gap:.9rem;flex-wrap:wrap;margin-top:2rem;}
 .btn-primary{
@@ -273,6 +274,42 @@ section{padding:90px 2rem;}
   background:var(--grey-100);padding:.28rem .75rem;border-radius:4px;margin-top:.1rem;
 }
 
+/* LECTURES */
+.lec-section-label{
+  font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:700;
+  color:var(--dark-900);margin:2.8rem 0 1.2rem;
+  padding-bottom:.5rem;border-bottom:2px solid var(--grey-200);
+}
+.lec-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+  gap:1rem;margin-bottom:.5rem;
+}
+.lec-card{
+  padding:1.2rem 1.4rem;border-radius:8px;
+  background:var(--white);border:1px solid var(--grey-200);
+  transition:border-color .2s,box-shadow .2s;
+}
+.lec-card:hover{border-color:rgba(200,0,30,.22);box-shadow:0 4px 16px rgba(0,0,0,.05);}
+.lec-tags{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:.6rem;}
+.lec-tag{
+  font-size:.65rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  padding:.2rem .6rem;border-radius:3px;
+}
+.tag-computing{background:#dbeafe;color:#1e40af;}
+.tag-info{background:#f3e8ff;color:#6b21a8;}
+.tag-comm{background:#dcfce7;color:#166534;}
+.tag-ml{background:#fef3c7;color:#92400e;}
+.tag-hardware{background:#ffe4e6;color:#9f1239;}
+.tag-math{background:#f0fdf4;color:#14532d;}
+.lec-title{font-size:.93rem;font-weight:600;color:var(--dark-900);line-height:1.5;margin-bottom:.3rem;}
+.lec-venue{font-size:.8rem;color:var(--grey-500);margin-bottom:.3rem;}
+.lec-meta{font-size:.75rem;color:var(--grey-300);font-weight:600;letter-spacing:.04em;}
+.lec-link{
+  display:inline-block;font-size:.8rem;font-weight:600;color:var(--red);
+  text-decoration:none;margin-top:.5rem;
+}
+.lec-link:hover{text-decoration:underline;}
+
 /* TEACHING */
 #teaching{background:var(--white);}
 .teaching-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;}
@@ -406,9 +443,9 @@ footer{background:var(--dark-800);padding:3rem 2rem;text-align:center;border-top
     </div>
 
     <p class="hero-blurb">
-      Quantum computing algorithms and applications on near-term quantum hardware. 20+ peer-reviewed publications and patents, with work in Nature and IEEE Transactions.
+      Quantum computing algorithms and applications on near-term quantum hardware. 20+ peer-reviewed publications and patents, with work in Nature and IEEE Transactions, Author of the book 'Ket Zero and Ket One'.
     </p>
-    <p class="hero-nqm">National Quantum Mission — Mentor &amp; Industry Expert (India &amp; APAC Ecosystem)</p>
+    <p class="hero-nqm">India Quantum Ecosystem — Mentor &amp; Industry Expert (India &amp; APAC)</p>
 
     <div class="hero-cta">
       <a href="https://scholar.google.com/citations?user=_ZZbn1MAAAAJ&hl=en" target="_blank" class="btn-primary">Google Scholar</a>
@@ -1027,23 +1064,18 @@ footer{background:var(--dark-800);padding:3rem 2rem;text-align:center;border-top
   </div>
 </section>
 
-<!-- TEACHING -->
+<!-- TEACHING & LECTURES -->
 <section id="teaching">
   <div class="container">
     <div class="reveal">
       <span class="section-tag">Education</span>
-      <h2 class="section-title">Teaching Experience</h2>
+      <h2 class="section-title">Teaching &amp; Lectures</h2>
       <div class="divider"></div>
     </div>
+
+    <!-- Teaching Experience Grid -->
     <div class="teaching-grid">
-      
-      <div class="teach-card reveal" style="transition-delay:.07s">
-        <h4>AICTE-DST Quantum Technology Courses</h4>
-        <div class="teach-org">MNIT Jaipur, IIT Kanpur, IIT Guwahati, IIT Roorkee &amp; others — with IBM &amp; AICTE</div>
-        <div class="teach-period">2025 – Present</div>
-        <div class="teach-desc">Video lecture series: Linear Algebra for Quantum Computing · Quantum Computing Algorithms (QFT, QPE, Shor's) · Quantum Information &amp; Communications (Shannon Theory, Density Matrices, Quantum Channels)</div>
-      </div>
-      
+
       <div class="teach-card reveal">
         <h4>Visiting Faculty</h4>
         <div class="teach-org">S N Bose National Centre for Basic Sciences, Kolkata</div>
@@ -1079,13 +1111,239 @@ footer{background:var(--dark-800);padding:3rem 2rem;text-align:center;border-top
         <div class="teach-desc">Post-Graduate Certificate Program in Business Analytics</div>
       </div>
 
+      <div class="teach-card reveal" style="transition-delay:.07s">
+        <h4>AICTE-DST Quantum Technology Courses</h4>
+        <div class="teach-org">MNIT Jaipur, IIT Kanpur, IIT Guwahati, IIT Roorkee &amp; others — with IBM &amp; AICTE</div>
+        <div class="teach-period">2022 – Present</div>
+        <div class="teach-desc">Video lecture series across 10+ institutions for faculty development programs</div>
+      </div>
+
     </div>
 
-    <div class="book-card reveal" style="margin-top:2rem">
+    <!-- ══════════════════════════════
+         LECTURE SERIES
+    ══════════════════════════════ -->
+
+    <div class="lec-section-label reveal">Quantum Computing</div>
+    <div class="lec-grid">
+
+      <div class="lec-card reveal">
+        <div class="lec-tags">
+          <span class="lec-tag tag-computing">Computing</span>
+          <span class="lec-tag tag-hardware">Hardware</span>
+        </div>
+        <div class="lec-title">IBM Quantum Perspective &amp; National Quantum Mission in India</div>
+        <div class="lec-venue">AICTE-FDP · Multiple IITs &amp; NITs</div>
+        <div class="lec-meta">2022 – Present</div>
+      </div>
+
+      <div class="lec-card reveal" style="transition-delay:.06s">
+        <div class="lec-tags">
+          <span class="lec-tag tag-computing">Computing</span>
+        </div>
+        <div class="lec-title">Quantum Computing Basics: Qubits, Gates and Circuits</div>
+        <div class="lec-venue">AICTE-FDP · MNIT Jaipur, IIT Kanpur, IIT Roorkee</div>
+        <div class="lec-meta">2022 – Present</div>
+      </div>
+
+      <div class="lec-card reveal" style="transition-delay:.12s">
+        <div class="lec-tags">
+          <span class="lec-tag tag-computing">Computing</span>
+          <span class="lec-tag tag-hardware">Hardware</span>
+        </div>
+        <div class="lec-title">IBM Quantum Composer and Quantum Lab using Qiskit (Hands-on)</div>
+        <div class="lec-venue">NPTEL · IBM &amp; IIT Madras · 37,000+ learners</div>
+        <div class="lec-meta">2021 – Present</div>
+        <a class="lec-link" href="https://onlinecourses.nptel.ac.in/noc26_cs89/preview" target="_blank">NPTEL Course →</a>
+      </div>
+
+      <div class="lec-card reveal">
+        <div class="lec-tags">
+          <span class="lec-tag tag-computing">Computing</span>
+        </div>
+        <div class="lec-title">Quantum Error Correction and NISQ-era Algorithms</div>
+        <div class="lec-venue">AICTE-FDP · IIT Guwahati, IIT Roorkee</div>
+        <div class="lec-meta">2022 – Present</div>
+      </div>
+
+      <div class="lec-card reveal" style="transition-delay:.06s">
+        <div class="lec-tags">
+          <span class="lec-tag tag-computing">Computing</span>
+          <span class="lec-tag tag-hardware">Hardware</span>
+        </div>
+        <div class="lec-title">Quantum Utility and Near-Term Applications: VQE and QAOA</div>
+        <div class="lec-venue">S N Bose NCBS · Full Semester Course, 2025</div>
+        <div class="lec-meta">Jan – May 2025</div>
+      </div>
+
+      <div class="lec-card reveal" style="transition-delay:.12s">
+        <div class="lec-tags">
+          <span class="lec-tag tag-computing">Computing</span>
+          <span class="lec-tag tag-ml">ML</span>
+        </div>
+        <div class="lec-title">Quantum Machine Learning: Parameterized Circuits and Hybrid Algorithms</div>
+        <div class="lec-venue">S N Bose NCBS · AICTE-DST Programs</div>
+        <div class="lec-meta">2024 – Present</div>
+      </div>
+
+    </div>
+
+    <div class="lec-section-label reveal">Quantum Algorithms</div>
+    <div class="lec-grid">
+
+      <div class="lec-card reveal">
+        <div class="lec-tags">
+          <span class="lec-tag tag-computing">Algorithms</span>
+        </div>
+        <div class="lec-title">Quantum Algorithms I: Deutsch-Jozsa, Bernstein-Vazirani, Simon's</div>
+        <div class="lec-venue">AICTE-FDP · NPTEL Programs</div>
+        <div class="lec-meta">2022 – Present</div>
+      </div>
+
+      <div class="lec-card reveal" style="transition-delay:.06s">
+        <div class="lec-tags">
+          <span class="lec-tag tag-computing">Algorithms</span>
+        </div>
+        <div class="lec-title">Quantum Algorithms II: Grover's Search and Amplitude Amplification</div>
+        <div class="lec-venue">AICTE-FDP · NPTEL Programs</div>
+        <div class="lec-meta">2022 – Present</div>
+      </div>
+
+      <div class="lec-card reveal" style="transition-delay:.12s">
+        <div class="lec-tags">
+          <span class="lec-tag tag-computing">Algorithms</span>
+          <span class="lec-tag tag-math">Math</span>
+        </div>
+        <div class="lec-title">Quantum Fourier Transform, QPE and Shor's Factoring Algorithm</div>
+        <div class="lec-venue">AICTE-FDP · IIT Kanpur, IIT Guwahati</div>
+        <div class="lec-meta">2022 – Present</div>
+      </div>
+
+      <div class="lec-card reveal">
+        <div class="lec-tags">
+          <span class="lec-tag tag-computing">Algorithms</span>
+          <span class="lec-tag tag-math">Math</span>
+        </div>
+        <div class="lec-title">Hamiltonian Simulation: Trotter, LCU, and Structured Matrix Approaches</div>
+        <div class="lec-venue">S N Bose NCBS · IITB Quantum Chemistry Group</div>
+        <div class="lec-meta">2024 – 2025</div>
+      </div>
+
+    </div>
+
+    <div class="lec-section-label reveal">Quantum Information Theory</div>
+    <div class="lec-grid">
+
+      <div class="lec-card reveal">
+        <div class="lec-tags">
+          <span class="lec-tag tag-info">Information</span>
+          <span class="lec-tag tag-math">Math</span>
+        </div>
+        <div class="lec-title">Linear Algebra for Quantum Computing: Density Matrices and Operators</div>
+        <div class="lec-venue">AICTE-DST Video Lecture Series · Multiple Institutes</div>
+        <div class="lec-meta">2022 – Present</div>
+      </div>
+
+      <div class="lec-card reveal" style="transition-delay:.06s">
+        <div class="lec-tags">
+          <span class="lec-tag tag-info">Information</span>
+        </div>
+        <div class="lec-title">Quantum Information Theory: Shannon Entropy, Quantum Channels, No-Cloning</div>
+        <div class="lec-venue">AICTE-DST Video Lecture Series</div>
+        <div class="lec-meta">2022 – Present</div>
+      </div>
+
+      <div class="lec-card reveal" style="transition-delay:.12s">
+        <div class="lec-tags">
+          <span class="lec-tag tag-info">Information</span>
+          <span class="lec-tag tag-math">Math</span>
+        </div>
+        <div class="lec-title">Entanglement, Bloch Sphere and Quantum Measurement Postulates</div>
+        <div class="lec-venue">AICTE-FDP · IIT Kanpur, MNIT Jaipur</div>
+        <div class="lec-meta">2022 – Present</div>
+      </div>
+
+    </div>
+
+    <div class="lec-section-label reveal">Quantum Communications</div>
+    <div class="lec-grid">
+
+      <div class="lec-card reveal">
+        <div class="lec-tags">
+          <span class="lec-tag tag-comm">Comm</span>
+          <span class="lec-tag tag-info">Information</span>
+        </div>
+        <div class="lec-title">Quantum Key Distribution and Quantum Cryptography</div>
+        <div class="lec-venue">AICTE-DST Video Lecture Series</div>
+        <div class="lec-meta">2022 – Present</div>
+      </div>
+
+      <div class="lec-card reveal" style="transition-delay:.06s">
+        <div class="lec-tags">
+          <span class="lec-tag tag-comm">Comm</span>
+          <span class="lec-tag tag-computing">Computing</span>
+        </div>
+        <div class="lec-title">Quantum-Assisted OFDM and MIMO Systems for 5G/6G</div>
+        <div class="lec-venue">NPTEL · Signal Processing for mm-Wave Communications</div>
+        <div class="lec-meta">2021 – 2022</div>
+      </div>
+
+      <div class="lec-card reveal" style="transition-delay:.12s">
+        <div class="lec-tags">
+          <span class="lec-tag tag-comm">Comm</span>
+          <span class="lec-tag tag-computing">Computing</span>
+        </div>
+        <div class="lec-title">Quantum Radar, Spectrum Sensing and Cognitive Radio</div>
+        <div class="lec-venue">IIT Kharagpur · Communication Hardware Lab</div>
+        <div class="lec-meta">2019 – 2021</div>
+      </div>
+
+    </div>
+
+    <div class="lec-section-label reveal">Quantum Applications &amp; Interdisciplinary</div>
+    <div class="lec-grid">
+
+      <div class="lec-card reveal">
+        <div class="lec-tags">
+          <span class="lec-tag tag-ml">ML</span>
+          <span class="lec-tag tag-computing">Computing</span>
+        </div>
+        <div class="lec-title">Quantum Computing for Biology and Chemistry: Drug Discovery &amp; Molecular Simulation</div>
+        <div class="lec-venue">IISER Pune · CDAC Pune · IIT Bombay (Chemistry)</div>
+        <div class="lec-meta">2024 – 2025</div>
+      </div>
+
+      <div class="lec-card reveal" style="transition-delay:.06s">
+        <div class="lec-tags">
+          <span class="lec-tag tag-hardware">Medical</span>
+          <span class="lec-tag tag-computing">Computing</span>
+        </div>
+        <div class="lec-title">Quantum Technology for Medical Imaging and Diagnosis</div>
+        <div class="lec-venue">AROC 2025 · AIIMS Delhi</div>
+        <div class="lec-meta">Dec 2025</div>
+      </div>
+
+      <div class="lec-card reveal" style="transition-delay:.12s">
+        <div class="lec-tags">
+          <span class="lec-tag tag-ml">ML</span>
+          <span class="lec-tag tag-computing">Computing</span>
+        </div>
+        <div class="lec-title">Quantum Machine Learning Applications: Time Series, Finance, Energy</div>
+        <div class="lec-venue">IIT Ropar Workshop · S N Bose NCBS</div>
+        <div class="lec-meta">2025</div>
+      </div>
+
+    </div>
+
+    <!-- Book -->
+    <div class="book-card reveal" style="margin-top:2.5rem">
       <h4>Quantum Computing: An Introductory Book</h4>
       <p>A handbook written for all beginners to quantum computing — co-authored by Mostafizur Rahaman to make quantum concepts accessible to students and practitioners across disciplines.</p>
       <a class="book-link" href="https://www.amazon.in/gp/product/B0G6D2HT3G/ref=ox_sc_act_title_1?smid=A1CYTLOJQWW85X&psc=1" target="_blank">View on Amazon →</a>
+      &nbsp;&nbsp;
+      <a class="book-link" href="https://drive.google.com/file/d/10PoERiUmUSmo5BAbV-c099Y1nAnbrB7L/view?usp=sharing" target="_blank">Table of Contents →</a>
     </div>
+
   </div>
 </section>
 
